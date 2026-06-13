@@ -16,9 +16,12 @@ export default function Home() {
   const addLog = (log) => setLogs([log, ...logs])
   const deleteLog = (id) => setLogs(logs.filter(l => l.id !== id))
 
+  const totalVolume = logs.reduce((sum, l) => sum + l.sets * l.reps, 0)
+
   return (
     <div className="p-4 md:p-6 max-w-3xl mx-auto">
-      <h1 className="text-2xl font-bold mb-6">FitLog Workout</h1>
+      <h1 className="text-2xl font-bold mb-2">FitLog Workout</h1>
+      <p className="mb-6 text-gray-400">Total volume: {totalVolume.toLocaleString()} reps</p>
       <WorkoutForm onAdd={addLog} />
       <Timer />
       <ProgressChart logs={logs} />
