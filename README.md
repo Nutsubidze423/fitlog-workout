@@ -17,3 +17,4 @@ npm run dev
 - Progress charts
 - PWA manifest
 # routine update 2026-06-17
+# routine update 2026-06-18
