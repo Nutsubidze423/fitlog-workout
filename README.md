@@ -1,30 +1,47 @@
 # FitLog Workout
 
-A Next.js PWA workout tracker with exercise database, timer, and progress charts.
+A Progressive Web App (PWA) workout tracker built with Next.js and React. Log exercises, track sets and reps, use the built-in timer, and visualize progress over time.
 
-## Setup
+## Features
+
+- Exercise database and workout logging
+- Set / rep tracking
+- Built-in workout timer
+- Progress charts
+- PWA manifest for installability
+- Responsive design
+
+## Tech Stack
+
+- Next.js 14
+- React 18
+- Tailwind CSS
+- PWA manifest
+
+## Getting Started
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Features
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- Exercise database by category
-- Rest timer with presets
-- Set/rep logging
-- Progress charts
-- PWA manifest
-# routine update 2026-06-17
-# routine update 2026-06-18
-# routine update 2026-06-19
-# routine update 2026-06-20
-# routine update 2026-06-23
-# routine update 2026-06-24
-# routine update 2026-06-25
-# routine update 2026-06-26
-# routine update 2026-06-27
-# routine update 2026-06-29
-# routine update 2026-06-30
-# routine update 2026-06-04
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+  components/     # WorkoutForm, Timer, ProgressChart
+public/
+  manifest.json
+```
+
+## License
+
+MIT
